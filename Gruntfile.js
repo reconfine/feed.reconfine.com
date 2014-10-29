@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -57,14 +56,6 @@ module.exports = function(grunt) {
           }
         },
 
-        /*smoosher: {
-          dist: {
-            files: {
-              '2014.tumblr': '2014.html',
-            },
-          },
-        },*/
-
         watch: {
           scripts: {
             files: ['js/*.js','/js/libs/*.js','js/src/*.js'],
@@ -86,11 +77,8 @@ module.exports = function(grunt) {
 
     });
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
-    require('./tasks/lib/notify');
     require('load-grunt-tasks')(grunt);
 
-    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['watch']);
 
 };
