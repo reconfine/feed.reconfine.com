@@ -1,44 +1,49 @@
 $(function() {
-  //Sticky
+
+  //Sticky Tags
   $('.tags').fixer({gap: 150});
+
+  //Trigger Fluidbox on Photos
   $('.photo a').fluidbox();
-  //magnify hover effect
+
+  //Magnify hover effect
   $('.photo .wrap').hover(function() {
     $(this).children('.icon-magnify').addClass('active');
     },function() {
     $(this).children('.icon-magnify').removeClass('active');
   });
-  //slidenav
-  var body = $('body');
-    //  mask = document.createElement("div");
-    //  mask.className = "mask";
-    var $mask = $("<div class='mask'></div>")
 
-  /* push menu left*/
+  //Slidenav
+  var body = $('body');
+  var $mask = $("<div class='mask'></div>")
+
+  // Trigger Menu on Header Click
   $('.togglemenu').click(function() {
-    $('body').addClass("pml-open").append($mask);
+    $('body').addClass("menu-open").append($mask);
     return false;
-    $('.mask').click(function() {closeNav();}); // To Try
  });
 
-  $('.post').mouseenter(function() {
-    $(this).addClass('hovered');
-  }).mouseleave(function() {
-    $(this).removeClass('hovered');
-  });
-
-/*  $('.togglemenu').mouseenter(function() {
-    $('body').addClass("pml-open").append($mask);
-});*/
-
-  $('nav').mouseleave(function() {
-    closeNav();
-  });
+ // Trigger Menu on Header Hover
+ /*  $('.togglemenu').mouseenter(function() {
+     $('body').addClass("pml-open").append($mask);
+ });*/
+ // Hide Menu on RollOut
+ $('nav').mouseleave(function() {
+   closeNav();
+ });
 
   function closeNav() {
-    $('body').removeClass("pml-open")
+    $('body').removeClass("menu-open")
     $('.mask').remove();
   }
+
+  // add hovered class to posts
+    $('.post').mouseenter(function() {
+      $(this).addClass('hovered');
+    }).mouseleave(function() {
+      $(this).removeClass('hovered');
+    });
+
 
 
 
