@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>
+    {Title}
+    {block:SearchPage} | {SearchQuery}{/block:SearchPage}
+    {block:PostSummary} | {PostSummary}{/block:PostSummary}
+  </title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage}" />
+  <meta name="keywords" content="{block:Tags}{Tag}, {/block:Tags}{Title}" />
+  <link rel="shortcut icon" href="{Favicon}">
+  <meta name="viewport" content="width=device-width">
+
+  <meta name="color:Accent" content="#4EA3D0"/>
+  <meta name="if:Show Post Author Name And Portrait" content="1">
+  <meta name="text:Google Analytics ID" content=""/>
+  <meta name="text:Disqus Shortname" content=""/>
+
+  <!-- replace with release css when moving to tumblr -->
+  <link rel="stylesheet" href="http://static.tumblr.com/wnekjnk/Lm2nauyxy/allstyles.css" />
+
+  <!-- replace with release html5shiv when moving to tumblr -->
+  <script src="http://static.tumblr.com/wnekjnk/CDjna2nyf/html5shiv.min.js"></script>
+
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/guc3otq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+
+<header>
+    <!--h1 class="site-title"><a href="/">{Title}</a></h1-->
+    <a href="#" class="togglemenu">
+      <h1><span>&nbsp;feed</span><br />
+          <span>.reconfine</span><br />
+          <span>.com</span>
+      </h1>
+    </a>
+
+
+
+</header>
+<nav class="menu push-menu-left">
+  <h1><span>&nbsp;feed</span><br /><span>.reconfine</span><br /><span>.com</span></h1>
+  <!--{block:Description}
+    <section class="blog-description">
+      {Description}
+    </section>
+  {/block:Description}
+  <form action="/search" method="get">
+      <input class="search-bar" type="text" name="q" value="{SearchQuery}"/>
+      <input class="submit icon-search" rel="tooltip" title="Search" type="submit" value=""/>
+  </form>-->
+  <ul>
+    <li><a href="/">/</a></li>
+    <li><a href="/archive">/archive</a></li>
+    <li><a href="/ask">/ask</a></li>
+
+  <!--ul class="social pull-right">
+    {block:SubmissionsEnabled}
+    <li><a class="icon-plus" rel="tooltip" title="Submit" href="/submit"></a></li>
+    {/block:SubmissionsEnabled}
+    <li><a class="icon-random" rel="tooltip" title="Random" href="/random"></a></li>
+    <li><a class="icon-gift"  rel="tooltip" title="RSS" href="#"></a></li>
+  </ul-->
+</nav>
+
+<main role="main">
+  <div class="container">
+
+    <div id="posts">
+      {block:Posts}
+
+        <div class="post {PostType} {TagsAsClasses}">
+
+          {block:HasTags}
+            <div class="tags">
+              {block:Tags}
+                <a href="{TagURL}">#{Tag}</a>
+              {/block:Tags}
+            </div>
+          {/block:HasTags}
+
+          {block:Text} <!-- text post -->
+            {block:Title}
+              <h2 class="post-title">
+                <a href="{Permalink}">{Title}</a>
+              </h2>
+            {/block:Title}
+            <div class="body">
+              {Body}
+            </div>
+          {/block:Text}
+
+
+          {block:Photo} <!-- photo post -->
+
+            <div class="wrap group">
+              {block:HighRes}
+              <a href="{PhotoURL-HighRes}" class="highres" data-fluidbox>
+              {/block:HighRes}
+              <img src="{PhotoURL-500}" class="orig" alt="{PhotoAlt}"/>
+              {block:HighRes}
+              </a>
+              {/block:HighRes}
+              <img src="http://static.tumblr.com/wnekjnk/XuZn9puoc/highres.svg" class='icon-magnify' />
+            </div>
+
+            {block:Caption}
+              <div class="caption">
+                {Caption}
+              </div>
+            {/block:Caption}
+          {/block:Photo}
+
+
+          {block:Photoset} <!-- photoset post -->
+            {Photoset-500}
+            {block:Caption}
+              <div class="caption">
+                {Caption}
+              </div>
+            {/block:Caption}
+          {/block:Photoset}
+
+
+          {block:Quote} <!-- quote post -->
+            <div class="{Length} quotebody">
+              "{Quote}"
+            </div>
+            {block:Source}
+              <span class="sans credit pull-right">&rarr; {Source}</span>
+            {/block:Source}
+          {/block:Quote}
+
+
+          {block:Link} <!-- link post -->
+            <a href="{URL}" {Target}>{Name}</a>
+            {block:Description}
+              {Description}
+            {/block:Description}
+          {/block:Link}
+
+
+          {block:Chat} <!-- chat post -->
+            {block:Title}
+              <h2 class="post-title">
+                <a href="{Permalink}">{Title}</a>
+              </h2>
+            {/block:Title}
+            <ul class="conversation">
+              {block:Lines}
+                <li class="chat-line user{UserNumber}">
+                  {block:Label}
+                    <strong class="sans">{Label}</strong>&nbsp;&nbsp;
+                  {/block:Label}
+                  {Line}
+                </li>
+              {/block:Lines}
+            </ul>
+          {/block:Chat}
+
+
+          {block:Audio} <!-- audio post -->
+            {AudioPlayerBlack}
+            {block:Caption}
+              <div class="caption">
+                {Caption}
+              </div>
+            {/block:Caption}
+          {/block:Audio}
+
+
+          {block:Video} <!-- video post -->
+            {Video-500}
+            {block:Caption}
+              <div class="caption">
+                {Caption}
+              </div>
+            {/block:Caption}
+          {/block:Video}
+
+
+          {block:Answer} <!-- answer post -->
+            <div class="question">
+              {Question}
+            </div>
+            <div class="asker group">
+              <img src="{AskerPortraitURL-24}" width="24" height="24" /> {Asker}
+            </div>
+            <div class="answer">{Answer}</div>
+          {/block:Answer}
+
+
+
+
+            <p class="meta">
+            {block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date}
+            {block:RebloggedFrom}
+            via <a class="via" href="{ReblogParentURL}"> {ReblogParentName} </a>
+            {/block:RebloggedFrom}
+            {block:ContentSource}
+              <br/>&rarr;
+                <a href="{SourceURL}" target="_blank">
+                  {SourceTitle}
+                </a>
+            {/block:ContentSource}
+            </p>
+
+
+
+        </div><!-- /.post -->
+      {/block:Posts}
+    </div><!-- /#posts -->
+
+    {block:Pagination}
+      <div class="footer">
+        <div class="links">
+          {block:NextPage}<a href="{NextPage}" class="right">{lang:Next page}</a>{/block:NextPage}
+          {block:PreviousPage}<a href="{PreviousPage}" class="left">{lang:Previous}</a>{/block:PreviousPage}
+        </div>
+      </div>
+    {/block:Pagination}
+
+  </div><!-- /.container -->
+</main>
+
+<!--footer>
+  <div class="container">
+    <p class="site-title">{Title}</p>
+  </div>
+</footer-->
+
+
+<!-- replace with release script when moving to tumblr -->
+<script src="http://static.tumblr.com/wnekjnk/CAMnauyyq/app.min.js"></script>
+
+
+{block:IfGoogleAnalyticsID}
+<!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq=[['_setAccount','{text:Google Analytics ID}'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  {/block:IfGoogleAnalyticsID}
+</body>
+</html>

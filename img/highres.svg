@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>highres</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Something" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-564.000000, -219.000000)" fill="#50E3C2">
+            <g id="highres" sketch:type="MSLayerGroup" transform="translate(564.000000, 219.000000)">
+                <path d="M20.5,41 C31.8218374,41 41,31.8218374 41,20.5 C41,9.17816263 31.8218374,0 20.5,0 C9.17816263,0 0,9.17816263 0,20.5 C0,31.8218374 9.17816263,41 20.5,41 Z M20.5,34.637931 C28.3081637,34.637931 34.637931,28.3081637 34.637931,20.5 C34.637931,12.6918363 28.3081637,6.36206897 20.5,6.36206897 C12.6918363,6.36206897 6.36206897,12.6918363 6.36206897,20.5 C6.36206897,28.3081637 12.6918363,34.637931 20.5,34.637931 Z" id="Oval-4" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-24" sketch:type="MSShapeGroup" transform="translate(41.500000, 42.000000) rotate(-45.000000) translate(-41.500000, -42.000000) " x="38" y="28" width="7" height="28" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
