@@ -120,16 +120,17 @@ body.menu-open {
 }
 
 #posts {
-  padding-top:200px;
+  padding-top:280px;
 }
 .post {
   border-bottom: solid 1px @grey;
   padding-bottom: @verticalpostpadding;
-  padding-top:@verticalpostpadding;
-  padding-left:254px;
-  padding-right:20%;
+  //padding-top: @verticalpostpadding;
+  margin-bottom: @verticalpostpadding;
+  padding-left: 254px;
+  padding-right: 20%;
   position: relative;
-  min-height:300px;
+  min-height: 300px;
 
   &>a {
     font-size:36px;
@@ -158,7 +159,8 @@ body.menu-open {
   .meta {
     transform: rotate(-90deg);
     position:absolute;
-    top:@verticalpostpadding;
+    //top:@verticalpostpadding;
+    top:0;
     left:100px;
     margin-left:-380px;
     margin-top:250px;
@@ -179,10 +181,9 @@ body.menu-open {
 
   .tags {
     display:block;
-    position:sticky;
-    position:-webkit-sticky;
     position:absolute;
-    margin-top:@verticalpostpadding;
+    //margin-top:@verticalpostpadding;
+    //top:@verticalpostpadding;
     padding-bottom:@verticalpostpadding;
     margin-left:-180px;
     .brandon-med;

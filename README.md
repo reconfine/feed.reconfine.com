@@ -7,4 +7,4 @@ Free for personal re-use
 ###Coming Next
 
 - search
-- themeing options
+- theming options

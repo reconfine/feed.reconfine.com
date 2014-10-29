@@ -76,13 +76,13 @@
 $(function() {
 
   //Sticky Tags
-  $('.tags').fixer({gap: 150});
+  $('.tags').fixer({gap: 210});
 
   //Trigger Fluidbox on Photos
-  $('.photo a').fluidbox();
+  $('.photo a.highres').fluidbox();
 
   //Magnify hover effect
-  $('.photo .wrap').hover(function() {
+  $('.photo .wrap-highres').hover(function() {
     $(this).children('.icon-magnify').addClass('active');
     },function() {
     $(this).children('.icon-magnify').removeClass('active');
