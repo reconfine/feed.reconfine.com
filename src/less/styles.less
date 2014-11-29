@@ -84,7 +84,34 @@ nav.push-menu-left {
     z-index:995;
     padding-left:61px;
     background-color:@primary;
-    h1 { font-size:60px; line-height:42px; margin-top:70px; color:white;}
+    h1 {
+      font-size:60px;
+      line-height:42px;
+      margin-top:70px;
+      color:white;
+    }
+    .line {
+      span {
+        display: block;
+        width: 0px;
+        height: 6px;
+        background-color:white;
+        float:left;
+        margin-right: 35px;
+        margin-top: 12px;
+        transition: @anim-all;
+        transition-delay: 150ms;
+      }
+      a {
+        color:white;
+        text-transform:lowercase;
+        text-align: right;
+      }
+      color: white;
+      font-size: 18px;
+      margin: 20px 0 40px 0;
+      .brandon-med;
+    }
     ul {
       padding:0;
       margin:0;
@@ -113,6 +140,9 @@ nav.push-menu-left {
 body.menu-open {
    nav.push-menu-left {
     left: 0
+  }
+  nav .line span {
+    width: 110px;
   }
  main {
     left: @nav-width;
