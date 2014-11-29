@@ -88,6 +88,13 @@ $(function() {
     $(this).children('.icon-magnify').removeClass('active');
   });
 
+  //Search
+  $('.search').click(function() {
+    $('.search-bar').focus();
+  //  return false;
+ });
+
+
   //Slidenav
   var body = $('body');
   var $mask = $("<div class='mask'></div>")
@@ -102,9 +109,10 @@ $(function() {
  /*  $('.togglemenu').mouseenter(function() {
      $('body').addClass("pml-open").append($mask);
  });*/
+
  // Hide Menu on RollOut
  $('nav').mouseleave(function() {
-   closeNav();
+    closeNav();
  });
 
   function closeNav() {
@@ -138,6 +146,11 @@ $(function() {
 
 
 });
+
+
+
+
+
 
 
 //Responsive Vids

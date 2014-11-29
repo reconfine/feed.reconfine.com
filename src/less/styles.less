@@ -121,18 +121,62 @@ nav.push-menu-left {
         text-align: left;
         padding: 0;
         margin:0;
+        margin-bottom:10px;
+        transition: @anim-all;
+        &:hover {
+          padding-left: 20px;
+        }
+        color:white;
+        font-size:40px;
+        line-height:40px;
+        .brandon-med;
         a {
             display: block;
             color:white;
             font-size:40px;
             line-height:40px;
             .brandon-med;
-            transition: @anim-all;
             padding-left:0px;
-            &:hover {
-              padding-left: 20px;
-            }
         }
+    }
+    .search {
+      .search-bar {
+        display:block;
+        margin-top:-51px;
+        margin-left:16px;
+        float:left;
+        padding:0;
+        width:210px;
+        color:white;
+        .brandon-med;
+        background:none;
+        border: none;
+        font-size:40px;
+        line-height:normal;
+        outline:none;
+        border-bottom: 2px solid @primary;
+        transition: @anim-all;
+
+        &:focus {
+          border-bottom: 2px solid white;
+        }
+
+        &::-webkit-input-placeholder {
+          color:white;
+          line-height:normal;
+        }
+        &::-moz-placeholder {
+          color:white;
+          line-height:normal;
+        }
+        &:-ms-placeholder {
+          color:white;
+          line-height:normal;
+        }
+
+
+        }
+        .submit {display:none;}
     }
 }
 
