@@ -6,5 +6,5 @@ Free for personal re-use
 
 ###Coming Next
 
-- search
+- search page template for 0 results
 - theming options
