@@ -24,6 +24,12 @@ font-weight: 500;
   max-width:@contentmaxwidth;
 }
 
+.title {
+  font-size:36px;
+  .brandon-med;
+  line-height:36px;
+}
+
 /* Helpers */
 .right {float:right;}
 .left {float:left;}
@@ -212,9 +218,7 @@ body.menu-open {
   min-height: 300px;
 
   &>a {
-    font-size:36px;
-    .brandon-med;
-    line-height:36px;
+    .title;
     max-width:@contentmaxwidth;
     display:inline-block;
     padding-bottom:10px;
@@ -233,6 +237,9 @@ body.menu-open {
 
   p {
     .bodytext;
+  }
+  .read_more_container a:after {
+    content:' →'
   }
 
   .meta {
@@ -298,6 +305,15 @@ body.menu-open {
     .quotebody+.credit {
       margin-top:20px;
       display: block;
+    }
+  }
+
+  &.text {
+    li {
+      .bodytext;
+    }
+    .post-title {
+      .title;
     }
   }
 

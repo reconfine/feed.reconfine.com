@@ -436,6 +436,13 @@ th {
   color: #333;
   max-width: 700px;
 }
+.title {
+  font-size: 36px;
+  font-family: "brandon-grotesque", futura, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
 /* Helpers */
 .right {
   float: right;
@@ -666,6 +673,9 @@ body.menu-open main {
   color: #333;
   max-width: 700px;
 }
+.post .read_more_container a:after {
+  content: ' →';
+}
 .post .meta {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -743,6 +753,20 @@ body.menu-open main {
 .post.quote .quotebody + .credit {
   margin-top: 20px;
   display: block;
+}
+.post.text li {
+  line-height: 1.7em;
+  font-size: 18px;
+  font-family: "chaparral-pro", georgia, serif;
+  color: #333;
+  max-width: 700px;
+}
+.post.text .post-title {
+  font-size: 36px;
+  font-family: "brandon-grotesque", futura, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
 }
 .post.link a {
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
