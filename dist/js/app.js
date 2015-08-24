@@ -100,15 +100,15 @@ $(function() {
   var $mask = $("<div class='mask'></div>")
 
   // Trigger Menu on Header Click
-  $('.togglemenu').click(function() {
+/*  $('.togglemenu').click(function() {
     $('body').addClass("menu-open").append($mask);
     return false;
- });
+ });*/
 
  // Trigger Menu on Header Hover
- /*  $('.togglemenu').mouseenter(function() {
-     $('body').addClass("pml-open").append($mask);
- });*/
+   $('.togglemenu').mouseenter(function() {
+     $('body').addClass("menu-open").append($mask);
+ });
 
  // Hide Menu on RollOut
  $('nav').mouseleave(function() {
