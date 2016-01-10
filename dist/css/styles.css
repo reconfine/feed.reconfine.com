@@ -749,6 +749,9 @@ body.menu-open main {
   margin-top: 0;
   margin-bottom: 0px;
 }
+.post.quote .quotebody {
+  font-size: 28px;
+}
 .post.quote .quotebody + .credit {
   margin-top: 20px;
   display: block;
