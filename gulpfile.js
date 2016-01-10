@@ -1,13 +1,16 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
+//var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('styles', function() {
   return gulp.src('src/less/styles.less')
+    .pipe(plugins.sourcemaps.init())
     .pipe(plugins.less())
     .pipe(plugins.autoprefixer())
     .pipe(gulp.dest('dist/css'))
     .pipe(plugins.rename({suffix: '.min'}))
     .pipe(plugins.cssmin())
+    .pipe(plugins.sourcemaps.write())
     .pipe(gulp.dest('dist/css'))
     //.on('error', gutil.log)
     .pipe(plugins.notify({ message: 'Styles Task Complete' }));

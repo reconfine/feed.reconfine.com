@@ -473,10 +473,10 @@ h1 {
   font-family: "brandon-grotesque", futura, helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  color: #50e3c2;
+  color: #50E3C2;
 }
 a {
-  color: #50e3c2;
+  color: #50E3C2;
   text-decoration: none;
   max-width: 700px;
 }
@@ -497,7 +497,7 @@ main {
   top: 0;
   left: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 .mask {
   position: fixed;
@@ -516,10 +516,10 @@ nav.push-menu-left {
   position: fixed;
   overflow: hidden;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: 995;
   padding-left: 61px;
-  background-color: #50e3c2;
+  background-color: #50E3C2;
 }
 nav.push-menu-left h1 {
   font-size: 60px;
@@ -544,7 +544,7 @@ nav.push-menu-left .line span {
   margin-right: 35px;
   margin-top: 12px;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   -webkit-transition-delay: 150ms;
           transition-delay: 150ms;
 }
@@ -564,7 +564,7 @@ nav.push-menu-left li {
   margin: 0;
   margin-bottom: 10px;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   color: white;
   font-size: 40px;
   line-height: 40px;
@@ -601,9 +601,9 @@ nav.push-menu-left .search .search-bar {
   font-size: 40px;
   line-height: normal;
   outline: none;
-  border-bottom: 2px solid #50e3c2;
+  border-bottom: 2px solid #50E3C2;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 nav.push-menu-left .search .search-bar:focus {
   border-bottom: 2px solid white;
@@ -636,7 +636,7 @@ body.menu-open main {
   padding-top: 280px;
 }
 .post {
-  border-bottom: solid 1px #e1e1e1;
+  border-bottom: solid 1px #E1E1E1;
   padding-bottom: 70px;
   margin-bottom: 70px;
   padding-left: 254px;
@@ -678,7 +678,6 @@ body.menu-open main {
 }
 .post .meta {
   -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
   top: 0;
@@ -688,22 +687,22 @@ body.menu-open main {
   width: 500px;
   text-align: right;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   font-family: "brandon-grotesque", futura, helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  color: #e1e1e1;
+  color: #E1E1E1;
 }
 .post .meta a {
   -webkit-transition: all 1s;
-          transition: all 1s;
-  color: #e1e1e1;
+  transition: all 1s;
+  color: #E1E1E1;
   border-bottom: 2px solid white;
 }
 .post .meta a:hover {
-  border-bottom: 2px solid #e1e1e1;
+  border-bottom: 2px solid #E1E1E1;
 }
 .post .tags {
   display: block;
@@ -718,15 +717,15 @@ body.menu-open main {
   float: left;
 }
 .post .tags a {
-  color: #e1e1e1;
+  color: #E1E1E1;
   clear: both;
   display: block;
   float: left;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 .post .tags a:hover {
-  color: #50e3c2;
+  color: #50E3C2;
 }
 .post .tags.sticky {
   opacity: 1;
@@ -738,12 +737,12 @@ body.menu-open main {
   color: #333;
   max-width: 700px;
   padding: 20px;
-  border: solid 3px #50e3c2;
+  border: solid 3px #50E3C2;
   margin-left: 0;
 }
 .post blockquote > blockquote {
   border: 0px;
-  border-left: solid 4px #e1e1e1;
+  border-left: solid 4px #E1E1E1;
   padding: 0 20px;
 }
 .post blockquote p:first-child {
@@ -770,19 +769,19 @@ body.menu-open main {
 }
 .post.link a {
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   border-bottom: 3px solid white;
 }
 .post.link a:hover {
-  border-bottom: 3px solid #50e3c2;
+  border-bottom: 3px solid #50E3C2;
 }
 .post.photo .wrap {
   position: relative;
-  width: 500px;
+  max-width: 500px;
 }
 .post.photo .icon-magnify {
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   opacity: 0;
   position: absolute;
   z-index: 993;
@@ -808,11 +807,11 @@ body.menu-open main {
   line-height: 36px;
   padding-bottom: 20px;
   -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   border-bottom: 3px solid white;
 }
 .footer .links a:hover {
-  border-bottom: 3px solid #50e3c2;
+  border-bottom: 3px solid #50E3C2;
   padding-bottom: 10px;
 }
 @media screen and (max-width: 1024px) {
@@ -826,6 +825,7 @@ body.menu-open main {
 .fluidbox-overlay {
 	cursor: pointer;
 	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
 	opacity: 0;
 	position: fixed;
 	top: 0;
@@ -833,7 +833,7 @@ body.menu-open main {
 	bottom: 0;
 	right: 0;
 	-webkit-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 .fluidbox-wrap {
 	background-position: center center;
@@ -841,24 +841,26 @@ body.menu-open main {
 	margin: 0 auto;
 	position: relative;
 	-webkit-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 .fluidbox-ghost {
 	background-size: cover;
 	background-position: center center;
 	position: absolute;
 	-webkit-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 	.fluidbox-closed .fluidbox-ghost {
 		-webkit-transition-property: top, left, opacity, -webkit-transform;
+		transition-property: top, left, opacity, -webkit-transform;
 		transition-property: top, left, opacity, transform;
+		transition-property: top, left, opacity, transform, -webkit-transform;
 		-webkit-transition-delay: 0, 0, .25s, 0;
 		        transition-delay: 0, 0, .25s, 0;
 	}
 	.fluidbox-closed .fluidbox-wrap img {
 		-webkit-transition-property: opacity;
-		        transition-property: opacity;
+		transition-property: opacity;
 		-webkit-transition-delay: .25s;
 		        transition-delay: .25s;
 		-webkit-transition-duration: 0s;
